@@ -84,11 +84,10 @@ The `devcontainer.json` file defines the configuration for your development envi
         "customizations": {
             "vscode": {
                 "extensions": [
-                    "rust-lang.rust-analyzer",
-                    "rust-lang.rust"
+                    "rust-lang.rust-analyzer"
                 ]
 		    }
-	    },
+	    }
     }
     ```
 
