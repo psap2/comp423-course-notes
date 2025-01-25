@@ -30,6 +30,7 @@ Hey! This tutorial will walk you through how to set up a dev container for Rust.
 1. Create a README file:
     ```bash
     echo "# Setting up Dev Container for Hello World! in Rust" > README.md
+    echo "Full tutorial for [Rust Setup Tutorial](https://psap2.github.io/comp423-course-notes/tutorials/rust-setup/)." >> README.md
     git add README.md
     git commit -m "Initial commit with README"    
     ```
