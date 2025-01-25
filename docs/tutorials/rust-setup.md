@@ -6,8 +6,8 @@
 Hey! This tutorial will walk you through how to set up a dev container for Rust. This tutorial will create a Rust Development Container in VS Code to make cohesive development enviorments.
 
 ## **Prerequisites**
-1. A GitHub account: If you don’t have one yet, create one at [GitHub](https://github.com).
-1. Git installed: [Install Git](https://git-scm.com) if you don’t have one already.
+1. A GitHub account: If you don't have one yet, create one at [GitHub](https://github.com).
+1. Git installed: [Install Git](https://git-scm.com) if you don't have one already.
 1. Visual Studio Code (VS Code): Download from [here](https://code.visualstudio.com).
 1. Docker installed: Required to run the dev container. [Get Docker here](https://www.docker.com).
 
@@ -119,14 +119,14 @@ fn main() {
 ```
 
 1. Compile the project with Cargo:
-    ```bash
+    ```rust
     cargo build
     ```
    This command compiles the project and creates an executable in the `target/debug` directory.
 
 ### Step 3: Run Your Rust Project
 1. You can run your project directly using Cargo:
-    ```bash
+    ```rust
     cargo run
     ```
    This will compile the Rust program and run the resulting executable, printing "Hello COMP423!" to your terminal.
@@ -136,3 +136,21 @@ fn main() {
 In Comp 211 we learned that in C programming, we use the `gcc` command to compile source files into executables. This command checks the code for syntax errors and compiles it into a binary file if there are no errors. Similarly, in Rust, the `cargo build` command is used to compile Rust projects. It ensures that the code is free from syntax errors and other issues that could prevent the program from running.
 
 Additionally, we also learned once the C program is compiled, we execute the resulting binary directly from the command line and run the program. Rust simplifies this process with the `cargo run` command, which both compiles the Rust project and runs the resulting executable. 
+
+## Part 4: Push your new changes to remote repository
+
+Now that we have updated our project. We need to ensure we commit and push our changes to the remote repository to make sure it is updated.
+In your current terminal, ensure first you are in the appropriate branch by running `git branch` and then `git pull origin <desired-branch>`
+to have our most updated branch from the remote, this is a good practice. 
+
+```bash
+git add . 
+git commit -m "Created our Hello COMP423! program"
+git push origin main 
+```
+
+## Conclusion
+Congratulations! You've successfully set up a Rust development environment in a container, created a new Rust project, and learned how to build and run it.
+
+
+***Citation:*** Much of material in this tutorial was reused from [Kris Jordan's Starting a Static Website Project with MkDocs website](https://comp423-25s.github.io/resources/MkDocs/tutorial/#step-2-add-requirementstxt-python-dependency-configuration). Specifically, the Prerequisites, Part One, and Part Two instructions were reused from the source and fixed to fit the context of this Rust tutorial.
