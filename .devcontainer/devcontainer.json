@@ -1,5 +1,5 @@
 {
-    "name": "COMP423 Course Notes",
+    "name": "Hello World! in Rust",
     "image": "mcr.microsoft.com/devcontainers/python:latest",
     "customizations": {
       "vscode": {
