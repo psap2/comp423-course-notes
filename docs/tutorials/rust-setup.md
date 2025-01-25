@@ -133,6 +133,6 @@ fn main() {
 
 ### Understanding Rust's Build System in Terms of C
 
-In Comp 211 we learned that inC programming, we use the `gcc` command to compile source files into executables. This command checks the code for syntax errors and compiles it into a binary file if there are no errors. Similarly, in Rust, the `cargo build` command is used to compile Rust projects. It ensures that the code is free from syntax errors and other issues that could prevent the program from running.
+In Comp 211 we learned that in C programming, we use the `gcc` command to compile source files into executables. This command checks the code for syntax errors and compiles it into a binary file if there are no errors. Similarly, in Rust, the `cargo build` command is used to compile Rust projects. It ensures that the code is free from syntax errors and other issues that could prevent the program from running.
 
 Additionally, we also learned once the C program is compiled, we execute the resulting binary directly from the command line and run the program. Rust simplifies this process with the `cargo run` command, which both compiles the Rust project and runs the resulting executable. 
