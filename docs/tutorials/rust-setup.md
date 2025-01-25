@@ -102,7 +102,8 @@ Once your dev container setup completes, close the current terminal tab (trash c
     ```bash
     cargo new hello-world-rust --vcs none
     ```
-   This command creates a new binary project named `hello-world-rust` without initializing a Git repository, and sets up a basic project structure including a Cargo.toml and a src/main.rs file all necessary for Rust.
+!!! note "Explaining the Cargo New Command"
+    This command creates a new binary project named `hello-world-rust` without initializing a Git repository, and sets up a basic project structure including a Cargo.toml and a src/main.rs file all necessary for Rust.
 
 ### Step 2: Build the Rust Project
 1. Navigate into your project directory:
