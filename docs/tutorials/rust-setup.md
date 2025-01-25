@@ -91,3 +91,48 @@ The `devcontainer.json` file defines the configuration for your development envi
 	    },
     }
     ```
+
+### Step 2. Reopen the Project in a VSCode Dev Container
+Reopen the project in the container by pressing Ctrl+Shift+P (or Cmd+Shift+P on Mac), typing "Dev Containers: Reopen in Container," and selecting the option. This may take a few minutes while the image is downloaded and the requirements are installed.
+Once your dev container setup completes, close the current terminal tab (trash can), open a new terminal pane within VSCode to verify you are in now the dev container terminal.
+
+## Part 3: Creating and Running a Rust Project
+### Step 1: Create a New Rust Project
+1. Within the VS Code terminal, ensure you are in the root directory where you want to create your project:
+    ```bash
+    cargo new hello-world-rust --vcs none
+    ```
+   This command creates a new binary project named `hello-world-rust` without initializing a Git repository, and sets up a basic project structure including a Cargo.toml and a src/main.rs file all necessary for Rust.
+
+### Step 2: Build the Rust Project
+1. Navigate into your project directory:
+    ```bash
+    cd hello-world-rust
+    ```
+    
+Open the src/main.rs file. By default, this file contains a simple Rust program that prints "Hello, world!". You can modify this file to customize our own message. 
+
+```rust
+fn main() {
+    println!("Hello COMP423");
+}
+```
+
+1. Compile the project with Cargo:
+    ```bash
+    cargo build
+    ```
+   This command compiles the project and creates an executable in the `target/debug` directory.
+
+### Step 3: Run Your Rust Project
+1. You can run your project directly using Cargo:
+    ```bash
+    cargo run
+    ```
+   This will compile the Rust program and run the resulting executable, printing "Hello COMP423!" to your terminal.
+
+### Understanding Rust's Build System in Terms of C
+
+In Comp 211 we learned that inC programming, we use the `gcc` command to compile source files into executables. This command checks the code for syntax errors and compiles it into a binary file if there are no errors. Similarly, in Rust, the `cargo build` command is used to compile Rust projects. It ensures that the code is free from syntax errors and other issues that could prevent the program from running.
+
+Additionally, we also learned once the C program is compiled, we execute the resulting binary directly from the command line and run the program. Rust simplifies this process with the `cargo run` command, which both compiles the Rust project and runs the resulting executable. 
