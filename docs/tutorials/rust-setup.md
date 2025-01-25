@@ -123,7 +123,8 @@ fn main() {
     ```rust
     cargo build
     ```
-   This command compiles the project and creates an executable in the `target/debug` directory.
+   This command compiles the project and creates an executable in the `target/debug` directory that holds your built executable
+   You can run this binary executable directly by running the command `./target/debug/hello-world-rust`.
 
 ### Step 3: Run Your Rust Project
 1. You can run your project directly using Cargo:
