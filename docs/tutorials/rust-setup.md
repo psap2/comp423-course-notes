@@ -48,7 +48,7 @@ Hey! This tutorial will walk you through how to set up a dev container for Rust.
 ### Step 3. Link your Local Repository to GitHub
 1. Add the GitHub repository as a remote:
     ```
-    git remote add origin https://github.com/<your-username>/comp423-course-notes.git
+    git remote add origin https://github.com/<your-username>/rust-tutorial.git
     ```
     Replace `<your-username>` with your GitHub username.
 
